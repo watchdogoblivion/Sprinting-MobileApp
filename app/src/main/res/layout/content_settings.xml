@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/blue1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SettingsActivity"
+    tools:showIn="@layout/activity_settings">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reaction_sensitivity"
+                android:textSize="22sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/startingReaction"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/starting_reaction"
+                android:textSize="22sp"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/stoppingReaction"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/stopping_reaction"
+                android:textSize="22sp"
+                android:layout_marginTop="100dp"
+                android:layout_marginStart="10dp"/>
+
+            <EditText
+                android:id="@+id/editStartingReaction"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_alignTop="@+id/startingReaction"
+                android:layout_toEndOf="@+id/startingReaction"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@drawable/text"/>
+
+            <EditText
+                android:id="@+id/editStoppingReaction"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_alignTop="@+id/stoppingReaction"
+                android:layout_toEndOf="@+id/stoppingReaction"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@drawable/text"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sensor_delay"
+                android:textSize="22sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/editDelayM"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@drawable/text"/>
+            <TextView
+                android:id="@+id/textDelayM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/min"
+                android:textSize="20sp"
+                android:layout_alignTop="@+id/editDelayM"
+                android:layout_toEndOf="@+id/editDelayM"/>
+
+            <EditText
+                android:id="@+id/editDelayS"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_alignTop="@+id/textDelayM"
+                android:layout_toEndOf="@+id/textDelayM"
+                android:layout_marginStart="10dp"
+                android:textColor="@drawable/text"/>
+
+            <TextView
+                android:id="@+id/textDelayS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sec"
+                android:textSize="20sp"
+                android:layout_alignTop="@+id/editDelayS"
+                android:layout_toEndOf="@+id/editDelayS"/>
+
+            <EditText
+                android:id="@+id/editDelayMS"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="number"
+                android:layout_alignTop="@+id/textDelayS"
+                android:layout_toEndOf="@+id/textDelayS"
+                android:layout_marginStart="10dp"
+                android:textColor="@drawable/text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ms"
+                android:textSize="20sp"
+                android:layout_alignTop="@+id/editDelayMS"
+                android:layout_toEndOf="@+id/editDelayMS"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:background="@android:color/holo_green_dark"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:onClick="save"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

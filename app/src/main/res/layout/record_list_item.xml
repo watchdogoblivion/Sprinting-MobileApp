@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lapTimeLabel2"
+                android:layout_width="81dp"
+                android:layout_height="46dp"
+                android:text="@string/time2"
+                android:textSize="22sp"
+                android:layout_marginStart="5dp"
+                android:textColor="@drawable/text"/>
+
+            <TextView
+                android:id="@+id/lapTimeView2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textSize="22sp"
+                android:text=""
+                android:layout_toEndOf="@+id/lapTimeLabel2"
+                android:layout_marginStart="10dp"
+                android:textColor="@drawable/text"/>
+
+
+            <TextView
+                android:id="@+id/distanceLabel2"
+                android:layout_width="100dp"
+                android:layout_height="44dp"
+                android:text="@string/distance"
+                android:textSize="22sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="60dp"
+                android:textColor="@drawable/text"/>
+
+            <EditText
+                android:id="@+id/editDistanceText2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_alignTop="@id/distanceLabel2"
+                android:layout_toEndOf="@+id/distanceLabel2"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@drawable/text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meters"
+                android:layout_marginStart="10dp"
+                android:layout_alignTop="@id/distanceLabel2"
+                android:layout_toEndOf="@+id/editDistanceText2"
+                android:textSize="22sp"
+                android:textColor="@drawable/text"/>
+
+
+        <TextView
+            android:id="@+id/lapSpeedLabel2"
+            android:layout_width="81dp"
+            android:layout_height="46dp"
+            android:text="@string/speed"
+            android:textSize="22sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="120dp"
+            android:textColor="@drawable/text"/>
+
+        <TextView
+            android:id="@+id/lapSpeedView2"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textSize="22sp"
+            android:text=""
+            android:layout_alignTop="@id/lapSpeedLabel2"
+            android:layout_toEndOf="@+id/lapSpeedLabel2"
+            android:layout_marginStart="10dp"
+            android:textColor="@drawable/text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="22sp"
+        android:text="@string/m_s"
+        android:layout_alignTop="@id/lapSpeedView2"
+        android:layout_toEndOf="@id/lapSpeedView2"
+        android:layout_marginStart="10dp"/>
+
+
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="180dp"
+                android:text="@string/update"
+                android:onClick="update"
+                android:background="@drawable/button_background"
+                android:textColor="@drawable/text"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/updateButton"
+                android:layout_marginStart="250dp"
+                android:text="@string/delete"
+                android:onClick="delete"
+                android:background="@drawable/button_background"
+                android:textColor="@drawable/text"/>
+
+
+</RelativeLayout>
