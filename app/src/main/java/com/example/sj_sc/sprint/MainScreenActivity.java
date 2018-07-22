@@ -366,10 +366,6 @@ public class MainScreenActivity extends AppCompatActivity implements SensorEvent
         TextView lapTimeView = (TextView)rL.getChildAt(1);
         EditText editDistanceText = (EditText)rL.getChildAt(3);
 
-
-        Calendar cal4 = Calendar.getInstance();
-        cal4.set(2018, 8,9);
-
         int distance;
         if(!editDistanceText.getText().toString().isEmpty()){
              distance = Integer.parseInt(editDistanceText.getText().toString());
@@ -378,7 +374,6 @@ public class MainScreenActivity extends AppCompatActivity implements SensorEvent
         }
 
         Sprint sprintT = new Sprint(lapTimeView.getText().toString(), distance);
-        sprintT.setDate(cal4);
 
         ContentValues values = new ContentValues();
         values.put(DBOpenHelper.SPRINT_TIME, sprintT.getTime());
